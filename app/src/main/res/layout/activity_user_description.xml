@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDescription">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@color/logo"/>
+    <RelativeLayout
+        android:id="@+id/emailUserDetali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/emailUserLevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="User's mail:"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/logo"
+            android:drawableLeft="@drawable/ic_baseline_email_24"/>
+        <TextView
+            android:id="@+id/emailUserDesno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/emailUserLevo"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/telefonUserDetali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/emailUserDetali"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/telefonUserLevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="User's phone:"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/logo"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"/>
+        <TextView
+            android:id="@+id/telefonUserDesno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/telefonUserLevo"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ocenkaZaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/telefonUserDetali"
+        android:text="The order is completed"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

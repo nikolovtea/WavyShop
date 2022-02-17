@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "325400262315",
+    "firebase_url": "https://wavy-shop-default-rtdb.firebaseio.com",
+    "project_id": "wavy-shop",
+    "storage_bucket": "wavy-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325400262315:android:fd47e72db808bb04e9e9ee",
+        "android_client_info": {
+          "package_name": "com.example.wavyshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325400262315-8d98asfqn6afqb5dogqta116almvs2ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwVEbWBKRi1rEpYkrUZTQNfadIYwTOpXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325400262315-8d98asfqn6afqb5dogqta116almvs2ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
